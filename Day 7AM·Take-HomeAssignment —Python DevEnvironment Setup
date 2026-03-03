@@ -1,0 +1,82 @@
+Day 7AM·Take-HomeAssignment —Python DevEnvironment Setup
+🛠 Developer Onboarding Kit
+
+This project is a Python-based developer environment validation tool designed to automate setup verification for new developers.
+
+It simulates a real-world onboarding scenario where a new team member runs a script to verify their development environment before starting work.
+
+🎯 Features
+
+✅ Python version validation (>= 3.10 required)
+
+✅ Virtual environment detection
+
+✅ Installed package inspection
+
+✅ Tool verification (pylint, black, numpy, requests)
+
+✅ Internet connectivity check
+
+✅ Disk space monitoring (warns if < 1GB free)
+
+✅ Execution time measurement per check
+
+✅ Summary report generation (setup_report.txt)
+
+✅ CLI support:
+
+--verbose → show installed packages
+
+--fix → auto-install missing tools
+
+✅ Black formatted
+
+✅ Pylint score ≥ 8/10 with custom .pylintrc
+
+📂 Project Structure
+.
+├── onboarding_env/
+├── onboard.py
+├── requirements.txt
+├── setup_report.txt
+├── .pylintrc
+└── README.md
+🧪 Usage
+
+Activate virtual environment:
+
+onboarding_env\Scripts\activate   # Windows
+
+Run basic check:
+
+python onboard.py
+
+Run with verbose output:
+
+python onboard.py --verbose
+
+Attempt auto-fix:
+
+python onboard.py --fix
+
+Run Pylint:
+
+pylint onboard.py
+📚 Concepts Demonstrated
+
+Python virtual environments (venv)
+
+CLI development with argparse
+
+Environment validation using sys, importlib, pkg_resources
+
+Disk monitoring with shutil.disk_usage
+
+Performance measurement using time
+
+Code quality enforcement using pylint and black
+
+💡 Why This Project?
+
+Modern software teams require consistent development environments.
+This tool ensures reproducibility, prevents dependency conflicts, and improves onboarding efficiency.
